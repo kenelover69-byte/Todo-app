@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        sans-serif;
+
+    background: #f2f2f7;
+    color: #111;
+}
+
+.app {
+    max-width: 700px;
+    margin: auto;
+
+    padding:
+        calc(20px + env(safe-area-inset-top))
+        16px
+        calc(30px + env(safe-area-inset-bottom));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 10px 0 20px;
+}
+
+#themeButton {
+    border: none;
+    background: white;
+
+    border-radius: 14px;
+
+    font-size: 20px;
+
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+
+    border: none;
+    border-radius: 14px;
+
+    padding: 14px;
+
+    font-size: 16px;
+}
+
+form button {
+    border: none;
+    border-radius: 14px;
+
+    padding: 0 16px;
+
+    background: #007aff;
+    color: white;
+
+    font-weight: 600;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 12px;
+
+    margin: 8px 0;
+}
+
+.task span {
+    flex: 1;
+    font-size: 17px;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.check {
+    border: none;
+    background: none;
+
+    font-size: 22px;
+    color: #007aff;
+}
+
+.delete {
+    border: none;
+    background: none;
+
+    font-size: 24px;
+    color: #ff3b30;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #888;
+
+    margin-top: 40px;
+}
+
+.dark {
+    background: #000;
+    color: white;
+}
+
+.dark input,
+.dark .task,
+.dark #themeButton {
+    background: #1c1c1e;
+    color: white;
+}
+
+.dark #emptyMessage {
+    color: #aaa;
+}
