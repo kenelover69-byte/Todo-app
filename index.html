@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TodoApp</title>
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>Мои задачи</h1>
+
+        <button id="themeButton">☀️</button>
+    </header>
+
+    <form id="taskForm">
+
+        <input
+            id="taskInput"
+            type="text"
+            placeholder="Новая задача"
+            autocomplete="off"
+        >
+
+        <button type="submit">
+            Добавить
+        </button>
+
+    </form>
+
+    <div id="taskList"></div>
+
+    <p id="emptyMessage">
+        Задач пока нет
+    </p>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
